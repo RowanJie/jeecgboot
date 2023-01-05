@@ -62,7 +62,6 @@ public class HumanController {
 		Result result = new Result<>();
 		IhumanService humanService = humanFactory.getHumanFactory(WorkTypeEnum.DRINK);
 		humanService.sleep(new Date());
-		assert(humanService != null);
 		IhumanService humanService1 = humanFactory.getHumanFactory(WorkTypeEnum.GETCHILD);
 		humanService1.sleep(new Date());
 		result.setResult(null);
